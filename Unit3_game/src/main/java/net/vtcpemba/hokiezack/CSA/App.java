@@ -14,6 +14,7 @@ public class App
         Game game = new Game();
         System.out.println("Do You want to play Rack Paper Scissors?");
         String play = scan.nextLine();
+        game.run();
         if (play == "yes" || play == "Yes"){
             game.run();
         }
