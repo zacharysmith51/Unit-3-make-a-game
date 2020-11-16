@@ -23,4 +23,9 @@ public class App
     void run(){
       cli.run();
     }
+    void run(String[] args){
+      if (args[0] == "true"){
+        cli.run();
+      }
+    }
 }
