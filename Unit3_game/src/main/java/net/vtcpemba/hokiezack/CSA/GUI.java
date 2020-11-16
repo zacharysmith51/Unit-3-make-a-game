@@ -1,3 +1,5 @@
+package net.vtcpemba.hokiezack.CSA;
+
 import javax.swing.*;
 import java.awt.event.*;
 
