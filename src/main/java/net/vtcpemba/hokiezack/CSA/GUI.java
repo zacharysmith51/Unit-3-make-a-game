@@ -18,14 +18,17 @@ public class GUI {
   /**
    * @since version 0.2.2 (11/16/2020)
    */
-  int hight;
+  int height;
   /**
    * @since version 0.2.2 (11/16/2020)
    */
+  JButton b_rock = new JButton("Rock");
+  JButton b_paper = new JButton("Paper");
+  JButton b_scissors = new JButton("Scissors");
   public GUI(){
     width = 300;
-    hight = 300;
-    frame = Jframe("Rock Paper Scissors "+App.version);
+    height = 300;
+    frame = JFrame("Rock Paper Scissors "+App.version);
   }
   /**
    * @param name Jframe name
@@ -33,34 +36,40 @@ public class GUI {
    */
   public GUI(String name){
     width = 300;
-    hight = 300;
-    frame = Jframe(name+App.version);
+    height = 300;
+    frame = JFrame(name+App.version);
   }
   /**
    * @param width set JFrame width
-   * @param hight set JFrame hight
+   * @param height set JFrame hight
    * @since version 0.2.2 (11/16/2020)
    */
-  public GUI(int width, int hight){
+  public GUI(int width, int height){
     width = 300;
-    hight = 300;
-    frame = Jframe("Rock Paper Scissors "+App.version);
+    height = 300;
+    frame = JFrame("Rock Paper Scissors "+App.version);
   }
   /**
    * @param name Jframe name
    * @param width set JFrame width
-   * @param hight set JFrame hight
+   * @param height set JFrame hight
    * @since version 0.2.2 (11/16/2020)
    */
-  public GUI(int width, int hight,String name){
+  public GUI(int width, int height,String name){
     width = 300;
-    hight = 300;
-    frame = Jframe(name+App.version);
+    height = 300;
+    frame = JFrame(name+App.version);
   }
   /**
    * @since version 0.2.2 (11/16/2020)
    */
   public void startGUI(){
     System.out.print("gui class is working");
+    frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    frame.getContentPane().add(b_rock);
+    frame.getContentPane().add(b_paper);
+    frame.getContentPane().add(b_scissors);
+    frame.setSize(width, height);
+    frame.setVisible(true);
   }
 }
