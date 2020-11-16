@@ -1,0 +1,108 @@
+diff --git a/pom.xml b/pom.xml
+index 817c004..d91dad6 100644
+--- a/pom.xml
++++ b/pom.xml
+@@ -6,17 +6,19 @@
+ 
+   <groupId>net.vtcpemba.hokiezack.CSA</groupId>
+   <artifactId>Unit3_game</artifactId>
+-  <version>0.2-SNAPSHOT</version>
++  <version>0.2.1-SNAPSHOT</version>
+ 
+   <name>Unit3_game</name>
+-  <description>A simple Unit3_game.</description>
+-  <!-- FIXME change it to the project's website -->
+-  <url>http://www.example.com</url>
++  <description>A simple rock paper scissors game</description>
++  <scm>
++    <connection>scm:git:https://github.com/zacharysmith51/Unit-3-make-a-game.git</connection>
++    <developerConnection>scm:git:ssh://github.com/zacharysmith51/Unit-3-make-a-game</developerConnection>
++  </scm>
+ 
+   <properties>
+     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+-    <maven.compiler.source>1.7</maven.compiler.source>
+-    <maven.compiler.target>1.7</maven.compiler.target>
++    <maven.compiler.source>1.8</maven.compiler.source>
++    <maven.compiler.target>1.8</maven.compiler.target>
+   </properties>
+ 
+   <dependencies>
+diff --git a/src/main/java/net/vtcpemba/hokiezack/CSA/Game.java b/src/main/java/net/vtcpemba/hokiezack/CSA/Game.java
+index a1d5380..98f118a 100644
+--- a/src/main/java/net/vtcpemba/hokiezack/CSA/Game.java
++++ b/src/main/java/net/vtcpemba/hokiezack/CSA/Game.java
+@@ -7,15 +7,28 @@ import java.util.Scanner;
+  * 
+  * @author Zachary Smith
+  * @version 0.2-SNAPSHOT
++ * @since 11/9/2020
+  */
+ public class Game {
++  /**
++   * @since 11/16/2020
++   */
+   public int runs = 0;
++  /**
++   * @since 11/16/2020
++   */
+   public int pwins = 0;
++  /**
++   * @since 11/16/2020
++   */
+   public int cwins = 0;
++  /**
++   * @since 11/16/2020
++   */
+   public int ties = 0;
+ 
+   /**
+-   * 
++   * selection of computers move
+    * @return int this returns the computers move
+    */
+   int selectMove() {
+@@ -25,6 +38,7 @@ public class Game {
+ 
+   /**
+    * Player move input
++   * 
+    * @return int this returns the players move
+    */
+   int enterMove() {
+@@ -43,9 +57,10 @@ public class Game {
+       return enterMove();
+     }
+   }
++
+   /**
+    * 
+-   * @param GUI 
++   * @param GUI
+    * @param move bypass console
+    * @return int this returns the players move
+    */
+@@ -76,7 +91,13 @@ public class Game {
+       }
+     }
+   }
+-
++  /**
++   * the code to check who wins
++   * @param P1 first player/computer input
++   * @param P2 second player input
++   * @return returns the winner
++   * @since 11/9/20
++   */
+   int checkWinner(int P1, int P2) {
+     /* 0 = tie, 1 = Computer win, 2 = Player win, 4 = error */
+     if (P1 == 0 && P2 == 0) {
+@@ -110,6 +131,8 @@ public class Game {
+       cwins++;
+     } else if (winner == 2) {
+       pwins++;
++    } else if (winner == 4){
++      System.out.println("!!!logic error!!!");
+     }
+     return winner;
+   }

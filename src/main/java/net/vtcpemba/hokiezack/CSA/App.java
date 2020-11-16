@@ -7,7 +7,8 @@ import java.util.Scanner;
  *
  */
 public class App {
-    static Scanner scan = new Scanner(System.in);
+    public static final String version = "0.2.2-SNAPSHOT";
+	static Scanner scan = new Scanner(System.in);
     Game game = new Game();
     static Cli cli = new Cli();
     static boolean display_gui = false; 
