@@ -20,7 +20,6 @@ public class Game
       if (App.display_gui == false){
         System.out.println("rock, paper, or scissors");
       }
-      String move = "";
       String I1 = App.scan.nextLine();
       if (I1.equals("Rock") || I1.equals("rock")) {
         return 0;
@@ -53,7 +52,7 @@ public class Game
           } else if (I1.equals("Paper") || I1.equals("paper")) {
             return 1;
           } else if (I1.equals("Scissors") || I1.equals("scissors")) {
-            return 0;
+            return 2;
           } else {
             System.out.println("not a valid anwser please choose another anwser");/*retry if invalid anwser*/
             return enterMove();
