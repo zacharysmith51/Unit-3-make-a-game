@@ -11,6 +11,7 @@ public class App {
 	static Scanner scan = new Scanner(System.in);
     Game game = new Game();
     static Cli cli = new Cli();
+    static GUI gui = new GUI();
     static boolean display_gui = false; 
     public static void main( String[] args ){
       System.out.println("Do You want to play Rack Paper Scissors?");
@@ -27,6 +28,7 @@ public class App {
     void run(String[] args){
       if (args[0] == "false"){
         cli.run();
+        gui.startGUI();//temp dev code
       }/* else if (args[0] == "true"){
         display_gui = true;
         gui.run();
