@@ -5,7 +5,7 @@
 '/home/user/.m2/repository/junit/junit/3.8.1/junit-3.8.1.jar'
 -encoding
 'UTF-8'
--protected
+-private
 -sourcepath
 '/projects/zacharysmith51-Unit-3-make-a-game/Unit3_game/src/main/java:/projects/zacharysmith51-Unit-3-make-a-game/Unit3_game/target/generated-sources/annotations'
 -author
@@ -14,7 +14,7 @@
 -charset
 'UTF-8'
 -d
-'/projects/zacharysmith51-Unit-3-make-a-game/Unit3_game/target/apidocs'
+'/projects/zacharysmith51-Unit-3-make-a-game/Unit3_game/target/site/apidocs'
 -docencoding
 'UTF-8'
 -doctitle
@@ -31,23 +31,23 @@ net.vtcpemba.hokiezack.CSA
 net.vtcpemba.hokiezack.CSA
 /home/user/.m2/repository/junit/junit/3.8.1/junit-3.8.1.jar = 1605550573583
 /projects/zacharysmith51-Unit-3-make-a-game/Unit3_game/src/main/java = 1605550137581
-/projects/zacharysmith51-Unit-3-make-a-game/Unit3_game/target/generated-sources/annotations = 1605550579854
-/projects/zacharysmith51-Unit-3-make-a-game/Unit3_game/target/apidocs/element-list = 1605550613471
-/projects/zacharysmith51-Unit-3-make-a-game/Unit3_game/target/apidocs/constant-values.html = 1605550613557
-/projects/zacharysmith51-Unit-3-make-a-game/Unit3_game/target/apidocs/overview-tree.html = 1605550613642
-/projects/zacharysmith51-Unit-3-make-a-game/Unit3_game/target/apidocs/package-search-index.js = 1605550613953
-/projects/zacharysmith51-Unit-3-make-a-game/Unit3_game/target/apidocs/package-search-index.zip = 1605550613956
-/projects/zacharysmith51-Unit-3-make-a-game/Unit3_game/target/apidocs/type-search-index.js = 1605550613956
-/projects/zacharysmith51-Unit-3-make-a-game/Unit3_game/target/apidocs/type-search-index.zip = 1605550613957
-/projects/zacharysmith51-Unit-3-make-a-game/Unit3_game/target/apidocs/member-search-index.js = 1605550613957
-/projects/zacharysmith51-Unit-3-make-a-game/Unit3_game/target/apidocs/member-search-index.zip = 1605550613958
-/projects/zacharysmith51-Unit-3-make-a-game/Unit3_game/target/apidocs/index-all.html = 1605550613959
-/projects/zacharysmith51-Unit-3-make-a-game/Unit3_game/target/apidocs/allclasses-index.html = 1605550613965
-/projects/zacharysmith51-Unit-3-make-a-game/Unit3_game/target/apidocs/allpackages-index.html = 1605550613967
-/projects/zacharysmith51-Unit-3-make-a-game/Unit3_game/target/apidocs/deprecated-list.html = 1605550613973
-/projects/zacharysmith51-Unit-3-make-a-game/Unit3_game/target/apidocs/allclasses.html = 1605550613975
-/projects/zacharysmith51-Unit-3-make-a-game/Unit3_game/target/apidocs/index.html = 1605550613976
-/projects/zacharysmith51-Unit-3-make-a-game/Unit3_game/target/apidocs/help-doc.html = 1605550613979
-/projects/zacharysmith51-Unit-3-make-a-game/Unit3_game/target/apidocs/stylesheet.css = 1605550614036
-/projects/zacharysmith51-Unit-3-make-a-game/Unit3_game/target/apidocs/script.js = 1605550614037
-/projects/zacharysmith51-Unit-3-make-a-game/Unit3_game/target/apidocs/search.js = 1605550614038
+/projects/zacharysmith51-Unit-3-make-a-game/Unit3_game/target/generated-sources/annotations = 1605552825848
+/projects/zacharysmith51-Unit-3-make-a-game/Unit3_game/target/site/apidocs/element-list = 1605553208142
+/projects/zacharysmith51-Unit-3-make-a-game/Unit3_game/target/site/apidocs/constant-values.html = 1605553208159
+/projects/zacharysmith51-Unit-3-make-a-game/Unit3_game/target/site/apidocs/overview-tree.html = 1605553208247
+/projects/zacharysmith51-Unit-3-make-a-game/Unit3_game/target/site/apidocs/package-search-index.js = 1605553208262
+/projects/zacharysmith51-Unit-3-make-a-game/Unit3_game/target/site/apidocs/package-search-index.zip = 1605553208265
+/projects/zacharysmith51-Unit-3-make-a-game/Unit3_game/target/site/apidocs/type-search-index.js = 1605553208265
+/projects/zacharysmith51-Unit-3-make-a-game/Unit3_game/target/site/apidocs/type-search-index.zip = 1605553208266
+/projects/zacharysmith51-Unit-3-make-a-game/Unit3_game/target/site/apidocs/member-search-index.js = 1605553208266
+/projects/zacharysmith51-Unit-3-make-a-game/Unit3_game/target/site/apidocs/member-search-index.zip = 1605553208266
+/projects/zacharysmith51-Unit-3-make-a-game/Unit3_game/target/site/apidocs/index-all.html = 1605553208267
+/projects/zacharysmith51-Unit-3-make-a-game/Unit3_game/target/site/apidocs/allclasses-index.html = 1605553208337
+/projects/zacharysmith51-Unit-3-make-a-game/Unit3_game/target/site/apidocs/allpackages-index.html = 1605553208339
+/projects/zacharysmith51-Unit-3-make-a-game/Unit3_game/target/site/apidocs/deprecated-list.html = 1605553208348
+/projects/zacharysmith51-Unit-3-make-a-game/Unit3_game/target/site/apidocs/allclasses.html = 1605553208349
+/projects/zacharysmith51-Unit-3-make-a-game/Unit3_game/target/site/apidocs/index.html = 1605553208350
+/projects/zacharysmith51-Unit-3-make-a-game/Unit3_game/target/site/apidocs/help-doc.html = 1605553208353
+/projects/zacharysmith51-Unit-3-make-a-game/Unit3_game/target/site/apidocs/stylesheet.css = 1605553208355
+/projects/zacharysmith51-Unit-3-make-a-game/Unit3_game/target/site/apidocs/script.js = 1605553208356
+/projects/zacharysmith51-Unit-3-make-a-game/Unit3_game/target/site/apidocs/search.js = 1605553208357
