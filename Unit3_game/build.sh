@@ -1,0 +1,1 @@
+mvn install site javadoc:javadoc javadoc:jar

@@ -8,7 +8,7 @@ public class Cli {
     while (x){
       int cmove = app.game.selectMove();
       int pmove = app.game.enterMove();
-      output_winner(app.game.updateStats(app.game.checkWinner(cmove, pmove)));
+      output_winner(app.game.updateStats(app.game.checkWinner(cmove, pmove)),cmove);
       System.out.println("do you want to play again?");            String play = App.scan.nextLine();
       if (play.equals("yes") || play.equals("Yes")){
         System.out.print("ok");
@@ -18,7 +18,21 @@ public class Cli {
       }        
     }
   }
-  static void output_winner(int winner){
-    System.out.println("the winner was" + winner);
+  static void output_winner(int winner, int cmove){
+    if (cmove == 0){
+        System.out.println("the computers move was Rock");
+    } else if (cmove == 1){
+        System.out.println("the computers move was Paper");
+    } else if (cmove == 2){
+        System.out.println("the computers move was Scissors");
+    }
+    if (winner == 0){
+        System.out.println("\nit was a tie");
+    } else if (winner == 1){
+        System.out.println("\nyou lost the computer won");
+    } else if (winner == 2){
+        System.out.println("\nyou won the computer lost");
+    }
   }
+
 }

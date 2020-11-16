@@ -8,7 +8,7 @@ import java.util.Scanner;
  */
 public class App {
     static Scanner scan = new Scanner(System.in);
-    static Game game = new Game();
+    Game game = new Game();
     static Cli cli = new Cli();
     static boolean display_gui = false; 
     public static void main( String[] args ){
