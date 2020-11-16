@@ -6,13 +6,12 @@ import java.util.Scanner;
  * Hello world!
  *
  */
-public class App 
-{
+public class App {
     static Scanner scan = new Scanner(System.in);
     static Game game = new Game();
     static Cli cli = new Cli();
-    public static void main( String[] args )
-    {
+    static boolean display_gui = false; 
+    public static void main( String[] args ){
       System.out.println("Do You want to play Rack Paper Scissors?");
       String play = scan.nextLine();
       App app = new App();
@@ -23,9 +22,13 @@ public class App
     void run(){
       cli.run();
     }
+    // args[0] is display method
     void run(String[] args){
-      if (args[0] == "true"){
+      if (args[0] == "false"){
         cli.run();
-      }
+      }/* else if (args[0] == "true"){
+        display_gui = true;
+        gui.run();
+      }*/
     }
 }

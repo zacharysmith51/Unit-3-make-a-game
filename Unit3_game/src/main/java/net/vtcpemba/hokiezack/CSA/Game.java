@@ -8,27 +8,30 @@ import java.util.Scanner;
  */
 public class Game 
 {
-    public int runs = 0;
-    public int pwins = 0;
-    public int cwins = 0;
-    public int ties = 0;
-    int selectMove(){
-        int RN = (int)(Math.random()*3);
-        return RN;// 0 = rock, 1 = paper, 2 = Scissors
-    }
+  public int runs = 0;
+  public int pwins = 0;
+  public int cwins = 0;
+  public int ties = 0;
+  int selectMove(){
+      int RN = (int)(Math.random()*3);
+      return RN;// 0 = rock, 1 = paper, 2 = Scissors
+  }
     int enterMove(){
-        String move = "";
-        String I1 = App.scan.nextLine();
-        if (I1.equals("Rock") || I1.equals("rock")) {
-            return 0;
-        } else if (I1.equals("Paper") || I1.equals("paper")) {
-            return 1;
-        } else if (I1.equals("Scissors") || I1.equals("scissors")) {
-            return 0;
-        } else {
-            System.out.println("not a valid anwser please choose another anwser");/*retry if invalid anwser*/
-            return enterMove();
-        }
+      if (App.display_gui == false){
+        System.out.println("rock, paper, or scissors");
+      }
+      String move = "";
+      String I1 = App.scan.nextLine();
+      if (I1.equals("Rock") || I1.equals("rock")) {
+        return 0;
+      } else if (I1.equals("Paper") || I1.equals("paper")) {
+          return 1;
+      } else if (I1.equals("Scissors") || I1.equals("scissors")) {
+          return 0;
+      } else {
+          System.out.println("not a valid anwser please choose another anwser");/*retry if invalid anwser*/
+          return enterMove();
+      }
     }
     int enterMove(boolean GUI, String move){
         if (GUI == false){
