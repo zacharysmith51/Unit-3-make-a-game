@@ -7,15 +7,28 @@ import java.util.Scanner;
  * 
  * @author Zachary Smith
  * @version 0.2-SNAPSHOT
+ * @since 11/9/2020
  */
 public class Game {
+  /**
+   * @since 11/16/2020
+   */
   public int runs = 0;
+  /**
+   * @since 11/16/2020
+   */
   public int pwins = 0;
+  /**
+   * @since 11/16/2020
+   */
   public int cwins = 0;
+  /**
+   * @since 11/16/2020
+   */
   public int ties = 0;
 
   /**
-   * 
+   * selection of computers move
    * @return int this returns the computers move
    */
   int selectMove() {
@@ -25,6 +38,7 @@ public class Game {
 
   /**
    * Player move input
+   * 
    * @return int this returns the players move
    */
   int enterMove() {
@@ -43,9 +57,10 @@ public class Game {
       return enterMove();
     }
   }
+
   /**
    * 
-   * @param GUI 
+   * @param GUI
    * @param move bypass console
    * @return int this returns the players move
    */
@@ -76,7 +91,13 @@ public class Game {
       }
     }
   }
-
+  /**
+   * the code to check who wins
+   * @param P1 first player/computer input
+   * @param P2 second player input
+   * @return returns the winner
+   * @since 11/9/20
+   */
   int checkWinner(int P1, int P2) {
     /* 0 = tie, 1 = Computer win, 2 = Player win, 4 = error */
     if (P1 == 0 && P2 == 0) {
@@ -110,6 +131,8 @@ public class Game {
       cwins++;
     } else if (winner == 2) {
       pwins++;
+    } else if (winner == 4){
+      System.out.println("!!!logic error!!!");
     }
     return winner;
   }
