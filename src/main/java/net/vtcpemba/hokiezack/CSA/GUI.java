@@ -23,9 +23,13 @@ public class GUI {
    * @since version 0.2.2 (11/16/2020)
    */
   String name;
+  /**
+   * @since version 0.2.2 (11/16/2020)
+   */
   JButton b_rock = new JButton("Rock");
   JButton b_paper = new JButton("Paper");
   JButton b_scissors = new JButton("Scissors");
+  JTextField textField = new JTextField();
   public GUI(){
     width = 300;
     height = 300;
