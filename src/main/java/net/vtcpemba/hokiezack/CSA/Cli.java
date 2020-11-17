@@ -1,6 +1,11 @@
 package net.vtcpemba.hokiezack.CSA;
-
-import java.util.Scanner;
+/**
+ * console interface
+ * 
+ * @author Zachary Smith
+ * @version 0.2-SNAPSHOT
+ * @since 11/9/2020
+ */
 public class Cli {
   App app = new App();
   public  void run(){

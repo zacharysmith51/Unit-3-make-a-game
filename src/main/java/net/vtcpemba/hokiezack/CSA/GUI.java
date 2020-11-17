@@ -1,7 +1,6 @@
 package net.vtcpemba.hokiezack.CSA;
 
 import javax.swing.*;
-import java.awt.event.*;
 /**
  * @author Zachary Smith
  * @since version 0.2.0 (11/16/2020)
@@ -65,6 +64,18 @@ public class GUI {
    * @since version 0.2.2 (11/16/2020)
    */
   public void startGUI(){
+    frame = new JFrame("Rock Paper Scissors "+App.version);
+    System.out.print("gui class is working");
+    frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    frame.getContentPane().add(b_rock);
+    frame.getContentPane().add(b_paper);
+    frame.getContentPane().add(b_scissors);
+    frame.setSize(width, height);
+    frame.setVisible(true);
+  }
+  public void startGUI(int Width, int Height){
+    this.width = Width;
+    this.height = Height;
     frame = new JFrame("Rock Paper Scissors "+App.version);
     System.out.print("gui class is working");
     frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

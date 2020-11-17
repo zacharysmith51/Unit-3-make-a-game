@@ -1,7 +1,4 @@
 package net.vtcpemba.hokiezack.CSA;
-
-import java.util.Scanner;
-
 /**
  * Main Game logic
  * 
