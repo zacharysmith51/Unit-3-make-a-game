@@ -60,7 +60,7 @@ public class Game {
 
   /**
    * 
-   * @param GUI
+   * @param GUI set if useing GUI
    * @param move bypass console
    * @return int this returns the players move
    */
@@ -103,7 +103,7 @@ public class Game {
     if (P1 == 0 && P2 == 0) {
       return 0;
     } else if (P1 == 0 && P2 == 1) {
-      return 3;
+      return 2;
     } else if (P1 == 0 && P2 == 2) {
       return 2;
     } else if (P1 == 1 && P2 == 0) {
@@ -111,9 +111,9 @@ public class Game {
     } else if (P1 == 1 && P2 == 1) {
       return 0;
     } else if (P1 == 1 && P2 == 2) {
-      return 3;
+      return 2;
     } else if (P1 == 2 && P2 == 0) {
-      return 3;
+      return 2;
     } else if (P1 == 2 && P2 == 1) {
       return 2;
     } else if (P1 == 2 && P2 == 2) {
@@ -131,7 +131,7 @@ public class Game {
       cwins++;
     } else if (winner == 2) {
       pwins++;
-    } else if (winner == 4){
+    } else if (winner == 4 || winner == 3){
       System.out.println("!!!logic error!!!");
     }
     return winner;
