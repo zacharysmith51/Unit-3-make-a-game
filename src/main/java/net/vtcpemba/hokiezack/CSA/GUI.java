@@ -4,6 +4,7 @@ import javax.swing.*;
 /**
  * @author Zachary Smith
  * @since version 0.2.0 (11/16/2020)
+ * @version 0.2.3
  */
 public class GUI {
   /**
@@ -31,7 +32,7 @@ public class GUI {
     name = "Rock Paper Scissors ";
   }
   /**
-   * @param name Jframe name
+   * @param Name Jframe name
    * @since version 0.2.2 (11/16/2020)
    */
   public GUI(String Name){
@@ -40,8 +41,8 @@ public class GUI {
     name = Name;
   }
   /**
-   * @param width set JFrame width
-   * @param height set JFrame hight
+   * @param Width set JFrame width
+   * @param Height set JFrame hight
    * @since version 0.2.2 (11/16/2020)
    */
   public GUI(int Width, int Height){
@@ -50,9 +51,9 @@ public class GUI {
     name = "Rock Paper Scissors ";
   }
   /**
-   * @param name Jframe name
-   * @param width set JFrame width
-   * @param height set JFrame hight
+   * @param Name Jframe name
+   * @param Width set JFrame width
+   * @param Height set JFrame hight
    * @since version 0.2.2 (11/16/2020)
    */
   public GUI(int Width, int Height,String Name){

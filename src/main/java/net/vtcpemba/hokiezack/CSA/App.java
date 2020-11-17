@@ -6,7 +6,7 @@ import java.util.Scanner;
  * Main app lanching
  * 
  * @author Zachary Smith
- * @version 0.2-SNAPSHOT
+ * @version 0.2.3
  * @since 11/9/2020
  */
 public class App {
@@ -21,7 +21,7 @@ public class App {
       System.out.println("Do You want to play Rack Paper Scissors?");
       String play = scan.nextLine();
       App app = new App();
-      if (play.equals("yes") == true || play.equals("Yes") == true){
+      if (play.equals("yes") || play.equals("Yes")){
             app.run(dargs);
         } 
     }
@@ -35,10 +35,10 @@ public class App {
      * @since 11/16/2020
      */
     void run(String[] args){
-      if (args[0] == "false"){
+      if (args[0].equals("false")){
         cli.run();
         //gui.startGUI();//temp dev code
-      }else if (args[0] == "true"){
+      }else if (args[0].equals("true")){
         display_gui = true;
         gui.startGUI();
       }

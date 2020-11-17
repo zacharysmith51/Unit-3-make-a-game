@@ -3,7 +3,7 @@ package net.vtcpemba.hokiezack.CSA;
  * Main Game logic
  * 
  * @author Zachary Smith
- * @version 0.2-SNAPSHOT
+ * @version 0.2.3
  * @since 11/9/2020
  */
 public class Game {
@@ -29,8 +29,7 @@ public class Game {
    * @return int this returns the computers move
    */
   int selectMove() {
-    int RN = (int) (Math.random() * 3);
-    return RN;// 0 = rock, 1 = paper, 2 = Scissors
+    return (int) (Math.random() * 3);// 0 = rock, 1 = paper, 2 = Scissors
   }
 
   /**
@@ -39,19 +38,29 @@ public class Game {
    * @return int this returns the players move
    */
   int enterMove() {
-    if (App.display_gui == false) {
+    if (!App.display_gui) {
       System.out.println("rock, paper, or scissors");
     }
     String I1 = App.scan.nextLine();
-    if (I1.equals("Rock") || I1.equals("rock")) {
-      return 0;
-    } else if (I1.equals("Paper") || I1.equals("paper")) {
-      return 1;
-    } else if (I1.equals("Scissors") || I1.equals("scissors")) {
-      return 0;
-    } else {
-      System.out.println("not a valid anwser please choose another anwser");/* retry if invalid anwser */
-      return enterMove();
+    switch (I1) {
+      case "Rock":
+      case "rock":
+      case "R":
+      case "r":
+        return 0;
+      case "Paper":
+      case "paper":
+      case "P":
+      case "p":
+        return 1;
+      case "Scissors":
+      case "scissors":
+      case "S":
+      case "s":
+        return 2;
+      default:
+        System.out.println("not a valid anwser please choose another anwser");/* retry if invalid anwser */
+        return enterMove();
     }
   }
 
@@ -62,29 +71,48 @@ public class Game {
    * @return int this returns the players move
    */
   int enterMove(boolean GUI, String move) {
-    if (GUI == false) {
+    if (!GUI) {
       String I1 = App.scan.nextLine();
-      if (I1.equals("Rock") || I1.equals("rock")) {
-        return 0;
-      } else if (I1.equals("Paper") || I1.equals("paper")) {
-        return 1;
-      } else if (I1.equals("Scissors") || I1.equals("scissors")) {
-        return 0;
-      } else {
-        System.out.println("not a valid anwser please choose another anwser");/* retry if invalid anwser */
-        return enterMove();
+      switch (move) {
+        case "Rock":
+        case "rock":
+        case "R":
+        case "r":
+          return 0;
+        case "Paper":
+        case "paper":
+        case "P":
+        case "p":
+          return 1;
+        case "Scissors":
+        case "scissors":
+        case "S":
+        case "s":
+          return 2;
+        default:
+          System.out.println("not a valid anwser please choose another anwser");/* retry if invalid anwser */
+          return enterMove();
       }
     } else {
-      String I1 = move;
-      if (I1.equals("Rock") || I1.equals("rock")) {
-        return 0;
-      } else if (I1.equals("Paper") || I1.equals("paper")) {
-        return 1;
-      } else if (I1.equals("Scissors") || I1.equals("scissors")) {
-        return 2;
-      } else {
-        System.out.println("not a valid anwser please choose another anwser");/* retry if invalid anwser */
-        return enterMove();
+      switch (move) {
+        case "Rock":
+        case "rock":
+        case "R":
+        case "r":
+          return 0;
+        case "Paper":
+        case "paper":
+        case "P":
+        case "p":
+          return 1;
+        case "Scissors":
+        case "scissors":
+        case "S":
+        case "s":
+          return 2;
+        default:
+          System.out.println("not a valid anwser please choose another anwser");/* retry if invalid anwser */
+          return enterMove();
       }
     }
   }

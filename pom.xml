@@ -6,7 +6,7 @@
 
   <groupId>net.vtcpemba.hokiezack.CSA</groupId>
   <artifactId>Unit3_game</artifactId>
-  <version>0.2.2-SNAPSHOT</version>
+  <version>0.2.3</version>
 
   <name>Unit3_game</name>
   <description>A simple rock paper scissors game</description>

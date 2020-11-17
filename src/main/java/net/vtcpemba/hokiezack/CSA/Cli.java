@@ -3,7 +3,7 @@ package net.vtcpemba.hokiezack.CSA;
  * console interface
  * 
  * @author Zachary Smith
- * @version 0.2-SNAPSHOT
+ * @version 0.2.3
  * @since 11/9/2020
  */
 public class Cli {
