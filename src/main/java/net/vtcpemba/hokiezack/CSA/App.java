@@ -10,7 +10,7 @@ import java.util.Scanner;
  * @since 11/9/2020
  */
 public class App {
-    public static final String version = "0.2.2-SNAPSHOT";
+    public static final String version = "0.2.3";
     static Scanner scan = new Scanner(System.in);
     Game game = new Game();
     static Cli cli = new Cli();
@@ -37,7 +37,7 @@ public class App {
     void run(String[] args){
       if (args[0].equals("false")){
         cli.run();
-        //gui.startGUI();//temp dev code
+        gui.startGUI();//temp dev code
       }else if (args[0].equals("true")){
         display_gui = true;
         gui.startGUI();

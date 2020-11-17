@@ -10,19 +10,30 @@ public class Cli {
   App app = new App();
   public  void run(){
     boolean x = true;
-    while (x){
+    while (x) {
       int cmove = app.game.selectMove();
       int pmove = app.game.enterMove();
-      output_winner(app.game.updateStats(app.game.checkWinner(cmove, pmove)),cmove);
+      output_winner(app.game.updateStats(app.game.checkWinner(cmove, pmove)), cmove);
       System.out.println("do you want to play again");
       String play = App.scan.nextLine();
-      if (play.equals("No") || play.equals("no")) {
-        System.out.print("you have played " + app.game.runs + " times. you have won "+app.game.pwins+" times. you have lost "+app.game.cwins+" times. you have tied "+app.game.ties+" times.");
-        x = false;
-      }        
+      switch (play) {
+        case "Yes":
+        case "yes":
+        case "Y":
+        case "y":
+          System.out.println("ok");
+          break;
+        case "No":
+        case "no":
+        case "N":
+        case "n":
+          System.out.print("you have played " + app.game.runs + " times. you have won " + app.game.pwins + " times. you have lost " + app.game.cwins + " times. you have tied " + app.game.ties + " times.");
+          x = false;
+          break;
+      }
     }
   }
-  static void output_winner(int winner, int cmove){
+  static void output_winner(int winner, int cmove ){
     if (cmove == 0){
         System.out.println("the computers move was Rock");
     } else if (cmove == 1){

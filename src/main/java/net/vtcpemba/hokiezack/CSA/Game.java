@@ -73,7 +73,7 @@ public class Game {
   int enterMove(boolean GUI, String move) {
     if (!GUI) {
       String I1 = App.scan.nextLine();
-      switch (move) {
+      switch (I1) {
         case "Rock":
         case "rock":
         case "R":
