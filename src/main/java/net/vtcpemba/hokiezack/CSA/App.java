@@ -12,7 +12,7 @@ import java.util.Scanner;
 public class App {
     public static final String version = "0.2.3";
     static Scanner scan = new Scanner(System.in);
-    Game game = new Game();
+    static Game game = new Game();
     static Cli cli = new Cli();
     static GUI gui = new GUI(400, 400);
     static String[] dargs = {"false"};

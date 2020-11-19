@@ -11,9 +11,9 @@ public class Cli {
   public  void run(){
     boolean x = true;
     while (x) {
-      int cmove = app.game.selectMove();
-      int pmove = app.game.enterMove();
-      output_winner(app.game.updateStats(app.game.checkWinner(cmove, pmove)), cmove);
+      int cmove = App.game.selectMove();
+      int pmove = App.game.enterMove();
+      output_winner(App.game.updateStats(App.game.checkWinner(cmove, pmove)), cmove);
       System.out.println("do you want to play again");
       String play = App.scan.nextLine();
       switch (play) {
@@ -27,7 +27,7 @@ public class Cli {
         case "no":
         case "N":
         case "n":
-          System.out.print("you have played " + app.game.runs + " times. you have won " + app.game.pwins + " times. you have lost " + app.game.cwins + " times. you have tied " + app.game.ties + " times.");
+          System.out.print("you have played " + App.game.runs + " times. you have won " + App.game.pwins + " times. you have lost " + app.game.cwins + " times. you have tied " + app.game.ties + " times.");
           x = false;
           break;
       }

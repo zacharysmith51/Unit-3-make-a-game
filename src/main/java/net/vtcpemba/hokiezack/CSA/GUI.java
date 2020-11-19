@@ -1,6 +1,9 @@
 package net.vtcpemba.hokiezack.CSA;
 
 import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
 /**
  * @author Zachary Smith
  * @since version 0.2.0 (11/16/2020)
@@ -89,5 +92,15 @@ public class GUI {
     frame.getContentPane().add(b_scissors);
     frame.setSize(width, height);
     frame.setVisible(true);
+  }
+  class b_RockListener implements ActionListener {
+    public void actionPerformed(ActionEvent e) {
+      App.game.enterMove(true,"rock");
+    }
+  }
+  class b_PaperListener implements ActionListener {
+    public void actionPerformed(ActionEvent e) {
+      App.game.enterMove(true,"paper");
+    }
   }
 }
