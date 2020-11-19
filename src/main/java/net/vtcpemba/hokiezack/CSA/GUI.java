@@ -103,4 +103,9 @@ public class GUI {
       App.game.enterMove(true,"paper");
     }
   }
+  class b_ScissorsListener implements ActionListener {
+    public void actionPerformed(ActionEvent e) {
+      App.game.enterMove(true,"scissors");
+    }
+  }
 }

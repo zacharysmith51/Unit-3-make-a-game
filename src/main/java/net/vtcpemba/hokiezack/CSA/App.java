@@ -37,7 +37,7 @@ public class App {
     void run(String[] args){
       if (args[0].equals("false")){
         cli.run();
-        //gui.startGUI();//temp dev code
+        gui.startGUI();//temp dev code
       }else if (args[0].equals("true")){
         display_gui = true;
         gui.startGUI();
